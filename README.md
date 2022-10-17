@@ -30,6 +30,9 @@
 
 ```bash
 $ npm install
+$ npm i -g @nestjs/cli
+$ nest new migration2
+$ nest g [module, controller, service, entity]
 ```
 
 ## Running the app
