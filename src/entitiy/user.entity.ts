@@ -7,5 +7,9 @@ export class User {
 
     @Column()
     fname: string;
+
+    @Column()
+    age: number;
+
 }
 

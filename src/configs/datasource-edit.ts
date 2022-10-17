@@ -24,7 +24,7 @@ export const ormconfig = new DataSource({
     //     "schema/*.json"
     // ],
     migrations: [
-        'src/migration/*create-user.ts'
+        'src/migration/*edit-user.ts'
     ],
     // cli: {
     //     entitiesDir: "entity",
