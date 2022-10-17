@@ -1,3 +1,4 @@
+import { User } from "src/entitiy/user.entity";
 import { MysqlConnectionOptions } from "typeorm/driver/mysql/MysqlConnectionOptions";
 
 export const ormconfig: MysqlConnectionOptions = {
@@ -8,22 +9,14 @@ export const ormconfig: MysqlConnectionOptions = {
     password: "",
     database: "migration2",
     logging: true,
-    synchronize: true,
+    synchronize: false,
+    
     entities: [
-        "src/entity/*.entity.js"
+       User
     ],
-    subscribers: [
-        "subscriber/*.js"
-    ],
-    // entitySchemas: [
-    //     "schema/*.json"
-    // ],
-    migrations: [
-        "migration/*.js"
-    ],
-    // cli: {
-    //     entitiesDir: "entity",
-    //     migrationsDir: "migration",
-    //     subscribersDir: "subscriber"
-    // }
+    // migrationsRun: false,
+ 
+    // migrations: [
+    //     'src/migration/*.ts'
+    // ]
 }
